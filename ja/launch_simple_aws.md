@@ -16,9 +16,9 @@ AWSアカウントを持っていない人は`サインアップ`、
 
 *設定入力が求められるので、以下の値を設定してください*
 
-> [Name tag] -> 適当な名前(Ex: First-Test等)  
-  [CIDR] -> 10.0.0.0/16  
-  [Tenacy] -> Default  
+> `Name tag` -> 適当な名前(Ex: First-Test等)  
+  `CIDR` -> 10.0.0.0/16  
+  `Tenacy` -> Default  
 
 ###3. Subnetの作成
 
