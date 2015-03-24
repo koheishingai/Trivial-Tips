@@ -126,6 +126,7 @@ AWSアカウントを持っていない人は`サインアップ`、
 
 > `Create a new key pair` -> 選択  
   `Key pair name` -> 任意の名前を設定  
+
 --
 >`Download Key Pair`から`*.pem`ファイルをダウンロードします  
 `Launch Instances`から起動します。
