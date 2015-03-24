@@ -4,14 +4,14 @@
 
 [AWSマネジメントコンソール](http://aws.amazon.com/jp/console/)
 
-AWSアカウントを持っていない人は`サインアップ`、
+AWSアカウントを持っていない人は`サインアップ`、  
 既に持っている人は`サインイン`しましょう。
 
 ###2. VPCの作成 ← Virtual Private Cloudの略です
 
 [VPC Dashbord](https://ap-northeast-1.console.aws.amazon.com/vpc/home?region=ap-northeast-1#)
 
-`Create VPC`ボタンから、VPCを作成します。
+`Create VPC`ボタンから、VPCを作成します。  
 `VPC`は、サーバー全体を載せるお盆のようなものです。
 
 *設定入力が求められるので、以下の値を設定してください*
@@ -24,15 +24,15 @@ AWSアカウントを持っていない人は`サインアップ`、
 
 [Subnets](https://ap-northeast-1.console.aws.amazon.com/vpc/home?region=ap-northeast-1#subnets:)
 
-`VPC`に続いて、`Subnet`を作成します。
-`Subnet`はネットワークという大きな広間を小領域に分割する仕切りのようなものです。
+`VPC`に続いて、`Subnet`を作成します。  
+`Subnet`はネットワークという大きな広間を小領域に分割する仕切りのようなものです。  
 
 *設定入力が求められるので、以下の値を設定してください*
 
-> [Name tag] -> 適当な名前(Ex: First-Test-a)
-  [VPC] -> 先程作成したVPCを選択
-  [Availabitity Zone] -> ap-northeast-1a
-  [CIDR] -> 10.0.0.0/24
+> [Name tag] -> 適当な名前(Ex: First-Test-a)  
+  [VPC] -> 先程作成したVPCを選択  
+  [Availabitity Zone] -> ap-northeast-1a  
+  [CIDR] -> 10.0.0.0/24  
 
 別の`Availability Zone`で、`Subnet`をもう一つ作成してみましょう。
 
