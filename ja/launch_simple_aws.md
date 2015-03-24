@@ -36,12 +36,10 @@ AWSアカウントを持っていない人は`サインアップ`、
 
 別の`Availability Zone`で、`Subnet`をもう一つ作成してみましょう。
 
-
-
-> [Name tag] -> 適当な名前(Ex: First-Test-c)
-  [VPC] -> 先程作成したVPCを選択
-  [Availabitity Zone] -> ap-northeast-1c
-  [CIDR] -> 10.0.1.0/24
+> [Name tag] -> 適当な名前(Ex: First-Test-c)  
+  [VPC] -> 先程作成したVPCを選択  
+  [Availabitity Zone] -> ap-northeast-1c  
+  [CIDR] -> 10.0.1.0/24  
 
 ###4. Internet Gatewayの追加
 
@@ -49,20 +47,20 @@ AWSアカウントを持っていない人は`サインアップ`、
 
 `Internet Gateway`は、`VPC`をインターネットに繋ぐ梯子のようなものです。
 
->`Create Internet Gateway`で作成をしたら、
+>`Create Internet Gateway`で作成をしたら、  
 `Attach to VPC`で、先程作成した`VPC`に追加します。
 
 ###5. Routes Tableのルール追加
 
 [Route Tables](https://ap-northeast-1.console.aws.amazon.com/vpc/home?region=ap-northeast-1#routetables:)
 
-`Internet Gateway`だけでは、インターネットへの接続はできません。
+`Internet Gateway`だけでは、インターネットへの接続はできません。  
 `Route Table`で、`Routes`を追加することでインターネットへの接続が可能になります。
 
-> `Create Route Table`で、`Route Table`を作成し、
+> `Create Route Table`で、`Route Table`を作成し、  
   `Routes`タブから、`0.0.0.0/0`の`Routes`を追加します。
 
-#ここまでが、AWSサーバーの土台です。
+##ここまでが、AWSサーバーの土台です。
 
 ###6. EC2インスタンスの作成 ← Elastic Compute Cloudの略です
 
@@ -131,4 +129,4 @@ AWSアカウントを持っていない人は`サインアップ`、
  `Download Key Pair`から`*.pem`ファイルをダウンロードします
   `Launch Instances`から起動します。
 
-#AWSサーバーが構築できました！
+##AWSサーバーが構築できました！
